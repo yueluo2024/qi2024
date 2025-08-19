@@ -1,0 +1,23 @@
+---
+const { title, description } = Astro.props;
+---
+
+<footer id="footer" class="panel">
+  <div class="inner split">
+    <div>
+      <section>
+        <h2>{title}</h2>
+        <div set:html={description}></div>
+      </section>
+      <p class="copyright">
+        器材: <a href="http://www.nikon.com.cn">Nikon D850 & NIKKOR 70-200mm</a>.<br />
+        我的摄影笔记: <a href="https://qi2025.netlify.app/">2025年</a>&
+         <a href="https://qi2024.netlify.app/">2024年</a>&
+        <a href="https://qi2023.netlify.app/">2023年</a>&
+         <a href="https://qi2022.netlify.app/">2022年</a>&
+        <a href="https://qi2021.netlify.app/">2021年</a>
+      </p>
+    </div>
+   
+  </div>
+</footer>
